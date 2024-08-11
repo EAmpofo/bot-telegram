@@ -48,30 +48,30 @@ The project is organized into several key directories:
     │   │           Progress.tsx
     │   │           TroopSvg.tsx
     │   └───images
-    │           Alien.png
-    │           aliens-banner.png
-    │           bg.jpeg
-    │           BiteAlien.png
-    │           biteAlienOverlayBottom.png
-    │           Coins.png
-    │           confirmBg.png
-    │           down.png
-    │           EnergyBoost.png
+    │           Alien.webp
+    │           aliens-banner.webp
+    │           bg.webp
+    │           BiteAlien.webp
+    │           biteAlienOverlayBottom.webp
+    │           Coins.webp
+    │           confirmBg.webp
+    │           down.webp
+    │           EnergyBoost.webp
     │           index.ts
-    │           millitary.png
-    │           mission.png
-    │           Octagon.png
-    │           OctagonLevel.png
-    │           plane.png
-    │           proceedBg.png
-    │           SelectCountryBackground.png
-    │           skipBg.png
-    │           Spear.png
-    │           SpearWithBg.png
-    │           spike.png
-    │           ufo.png
-    │           ufoback.png
-    │           UfoVector.png
+    │           millitary.webp
+    │           mission.webp
+    │           Octagon.webp
+    │           OctagonLevel.webp
+    │           plane.webp
+    │           proceedBg.webp
+    │           SelectCountryBackground.webp
+    │           skipBg.webp
+    │           Spear.webp
+    │           SpearWithBg.webp
+    │           spike.webp
+    │           ufo.webp
+    │           ufoback.webp
+    │           UfoVector.webp
     ├───components
     │   ├───game
     │   │       GameHomeScreen.tsx

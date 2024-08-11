@@ -1,18 +1,18 @@
 .welcomeScreen{
-    background-image: url("../../assets/images/bg.jpeg");
+    background-image: url("../../assets/images/bg.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
 }
 .allianceScreen{
-    background-image: url("../../assets/images/ufo.png");
+    background-image: url("../../assets/images/ufo.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .selectCountry{
-    background-image: url("../../assets/images/plane.png");
+    background-image: url("../../assets/images/plane.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -25,7 +25,7 @@
   }
   
   .selected-item {
-    background-image: url("../../assets/images/SelectCountryBackground.png");
+    background-image: url("../../assets/images/SelectCountryBackground.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -40,7 +40,7 @@
   }
   
   .dropdown {
-    background-image: url("../../assets/images/SelectCountryBackground.png");
+    background-image: url("../../assets/images/SelectCountryBackground.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -56,7 +56,7 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   .btnLevel{
-    background-image: url("../../assets/images/SelectCountryBackground.png");
+    background-image: url("../../assets/images/SelectCountryBackground.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

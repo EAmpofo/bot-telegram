@@ -1,9 +1,9 @@
-import { Alien, ProceedBg, LevelUpBadge } from "../../assets/images";
+import { Alien, ProceedBg, LevelUpBadge, SpearWithBg } from "../../assets/images";
 import ButtonWithBackground from "../shared/ButtonWithBackground";
 import "../../utils/styles/customStyle.css";
 import BackgroundPattern from "../shared/BackgroundPattern";
 import { cover, flexClass } from "../../utils/helpers/helper";
-import SpearWithBg from "../../assets/images/SpearWithBg.png";
+
 
 
 import ArrowDown from "../../assets/icons/svgs/ArrowDown";

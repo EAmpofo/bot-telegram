@@ -1,25 +1,25 @@
-import aliensBanner from './aliens-banner.png';
-import Alien from './Alien.png';
-import Background from './bg.jpeg'
-import UFO from './ufo.png'
-import UFOBackground from './ufoback.png'
-import Plane from './plane.png'
-import CornFirmBackground from './confirmBg.png'
-import ProceedBg from './proceedBg.png'
-import SkipBg from './skipBg.png'
-import BiteAliens from './BiteAlien.png';
-import EnergyBoost from "./EnergyBoost.png"
-import biteBottom from "./biteAlienOverlayBottom.png"
-import Mission from './mission.png'
-import Spike from './spike.png'
-import Millitary from './millitary.png'
-import Octagon from './Octagon.png'
-import Spear from './Spear.png'
-import ArrowDown from "./down.png"
-import Coins from "./Coins.png"
-
-import UfoVector from "./UfoVector.png"
+import aliensBanner from './aliens-banner.webp';
+import Alien from './Alien.webp';
+import Background from './bg.webp'
+import UFO from './ufo.webp'
+import UFOBackground from './ufoback.webp'
+import Plane from './plane.webp'
+import CornFirmBackground from './confirmBg.webp'
+import ProceedBg from './proceedBg.webp'
+import SkipBg from './skipBg.webp'
+import BiteAliens from './BiteAlien.webp';
+import EnergyBoost from "./EnergyBoost.webp"
+import biteBottom from "./biteAlienOverlayBottom.webp"
+import Mission from './mission.webp'
+import Spike from './spike.webp'
+import Millitary from './millitary.webp'
+import Octagon from './Octagon.webp'
+import Spear from './Spear.webp'
+import ArrowDown from "./down.webp"
+import Coins from "./Coins.webp"
+import UfoVector from "./UfoVector.webp"
 import LevelUpBadge from "./OctagonLevel.png"
+import SpearWithBg from "./SpearWithBg.webp"
 export {
     aliensBanner,
     Alien,
@@ -41,5 +41,6 @@ export {
     ArrowDown,
     Coins,
     UfoVector,
-    LevelUpBadge
+    LevelUpBadge,
+    SpearWithBg
 }
