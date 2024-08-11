@@ -19,7 +19,8 @@ export default {
         "custom-green": "#003902",
         "dark-red": "#1C0101",
         "custom-red": "#390000",
-        "primary-red": "#FF3838"
+        "primary-red": "#FF3838",
+        "primary-shade-black": "#19191A"
       }
     },
   },

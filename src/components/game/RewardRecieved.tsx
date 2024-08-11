@@ -64,7 +64,6 @@ const RewardReceived = ({ onClose }: { onClose: () => void }) => {
                 image={Pattern}
               />
             </div>
-            <div></div>
           </div>
         </div>
       </div>

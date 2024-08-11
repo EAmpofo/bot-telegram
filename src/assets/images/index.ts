@@ -18,7 +18,7 @@ import Spear from './Spear.png'
 import ArrowDown from "./down.png"
 import Coins from "./Coins.png"
 import Pattern from "./pattern.png"
-import UfoVector from "./ufoVector.png"
+import UfoVector from "./UfoVector.png"
 import LevelUpBadge from "./OctagonLevel.png"
 export {
     aliensBanner,
