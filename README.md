@@ -48,30 +48,30 @@ The project is organized into several key directories:
     │   │           Progress.tsx
     │   │           TroopSvg.tsx
     │   └───images
-    │           Alien.png
-    │           aliens-banner.png
-    │           bg.jpeg
-    │           BiteAlien.png
-    │           biteAlienOverlayBottom.png
-    │           Coins.png
-    │           confirmBg.png
-    │           down.png
-    │           EnergyBoost.png
+    │           Alien.webp
+    │           aliens-banner.webp
+    │           bg.webp
+    │           BiteAlien.webp
+    │           biteAlienOverlayBottom.webp
+    │           Coins.webp
+    │           confirmBg.webp
+    │           down.webp
+    │           EnergyBoost.webp
     │           index.ts
-    │           millitary.png
-    │           mission.png
-    │           Octagon.png
-    │           OctagonLevel.png
-    │           plane.png
-    │           proceedBg.png
-    │           SelectCountryBackground.png
-    │           skipBg.png
-    │           Spear.png
-    │           SpearWithBg.png
-    │           spike.png
-    │           ufo.png
-    │           ufoback.png
-    │           UfoVector.png
+    │           millitary.webp
+    │           mission.webp
+    │           Octagon.webp
+    │           OctagonLevel.webp
+    │           plane.webp
+    │           proceedBg.webp
+    │           SelectCountryBackground.webp
+    │           skipBg.webp
+    │           Spear.webp
+    │           SpearWithBg.webp
+    │           spike.webp
+    │           ufo.webp
+    │           ufoback.webp
+    │           UfoVector.webp
     ├───components
     │   ├───game
     │   │       GameHomeScreen.tsx
@@ -121,10 +121,66 @@ The project is organized into several key directories:
         └───onboarding
                 OnboardingScreen.tsx
                 TutorialScreen.tsx
-
+```
 ## `package.json` Overview
 - Project Name: telegrambot
 - Version: 0.0.0
 - Type: Module
 
 ## Scripts
+- `dev`: Runs the development server using Vite.
+- `build`: Compiles TypeScript and builds the project for production.
+- `lint`: Runs ESLint to analyze and fix code issues.
+- `preview`: Previews the production build.
+
+## Dependencies
+- React & ReactDOM: Core libraries for building the user interface.
+- @emotion/react & @emotion/styled: For CSS-in-JS styling solutions.
+- @mui/material: Material-UI components for building responsive interfaces.
+- Redux & Redux Toolkit: For state management.
+- React Router DOM: For handling client-side routing.
+- Tailwind CSS: Utility-first CSS framework.
+- TypeScript: Superset of JavaScript for type safety.
+
+## DevDependencies
+- Vite: Build tool for faster and leaner development.
+- ESLint: Linter to maintain code quality.
+- TypeScript & Type Definitions: For adding static types to JavaScript.
+- Tailwind CSS & PostCSS: Tools for writing optimized and maintainable styles.
+
+## Installation and Setup
+To install and set up the project, follow these steps:
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   cd telegrambot
+   ```
+2. Install dependencies:
+   ```
+    npm install
+   ```
+3. Run the development server:
+   ```
+    npm run dev
+   ```
+4. Build the project:
+   ```
+    npm run build
+   ```
+5. Preview the production build:
+   ```
+    npm run preview
+   ```
+## Project Architecture
+The TelegramBot project follows a modular architecture where each feature is encapsulated within its own directory. This approach promotes maintainability and scalability, allowing for easy updates and feature additions.
+- **Components**: Reusable UI components.
+- **Store**: Centralized state management using Redux.
+- **Routes**: Handles navigation across different views.
+- **Utils**: Utility functions, type definitions, and styles.
+
+## How it works
+![BotFlowchart](https://github.com/user-attachments/assets/4882d6a0-e6f5-46e3-a859-31d08ea5a748)
+
+
+## Conclusion
+The TelegramBot project is a modern, modular, and scalable web application built with React and TypeScript. Its architecture and design choices prioritize maintainability, ensuring that the project can grow and evolve with ease. The use of industry-standard tools like Vite, Redux, and Tailwind CSS further enhances the development experience, making it a robust foundation for building interactive web applications.
