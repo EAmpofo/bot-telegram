@@ -3,6 +3,7 @@
 ## Overview
 
 The **TelegramBot** project is a web-based application designed to interface with a Telegram bot, providing users with an interactive and engaging experience. The project leverages modern web technologies such as React, TypeScript, and Vite, with a focus on a modular and maintainable architecture. It is built with scalability in mind, using tools like Redux for state management and Tailwind CSS for styling. The project features various components that work together to deliver a smooth user experience, including onboarding screens, game-related screens, and shared utilities.
+The main functionality of the application is for users to tap and earn points, moving from one level to another.
 
 ## Directory Structure
 
@@ -182,5 +183,3 @@ The TelegramBot project follows a modular architecture where each feature is enc
 ![BotFlowchart](https://github.com/user-attachments/assets/4882d6a0-e6f5-46e3-a859-31d08ea5a748)
 
 
-## Conclusion
-The TelegramBot project is a modern, modular, and scalable web application built with React and TypeScript. Its architecture and design choices prioritize maintainability, ensuring that the project can grow and evolve with ease. The use of industry-standard tools like Vite, Redux, and Tailwind CSS further enhances the development experience, making it a robust foundation for building interactive web applications.
