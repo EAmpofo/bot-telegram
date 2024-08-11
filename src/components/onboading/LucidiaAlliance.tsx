@@ -8,9 +8,9 @@ import UfoOverlay from "../shared/UfoOverlay";
 import { CircularProgress } from "@mui/material";
 import { useEffect } from "react";
 
-const LucidiaAlliance = ({onTimeout}: {onTimeout: () => void}) => {
+const LucidiaAlliance = ({ onTimeout }: { onTimeout: () => void }) => {
   const globe = <img src={Globe} alt="globe" className="w-[28px] h-[28px]" />;
-  
+
   const flight = (
     <img src={Flight} alt="flight" className="w-[23px] h-[23px]" />
   );
@@ -23,7 +23,7 @@ const LucidiaAlliance = ({onTimeout}: {onTimeout: () => void}) => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      onTimeout(); 
+      onTimeout();
     }, 3000);
 
     return () => clearTimeout(timer);
@@ -32,7 +32,7 @@ const LucidiaAlliance = ({onTimeout}: {onTimeout: () => void}) => {
     <div className="allianceScreen relative h-[100vh] flex flex-col items-center">
       <UfoOverlay />
       <div className="absolute bottom-0 flex flex-col items-center gap-4 text-center">
-       <CircularProgress className="!w-[130px] !h-[130px]"/>
+        <CircularProgress className="!w-[130px] !h-[130px]" />
         <div className="font-normal  text-primary-green w-[148px] h-[152px] mb-12 text-center">
           <p className="text-[33px]">
             The <span className="font-[900] text-[44px]">Lucidia</span> Alliance

@@ -10,118 +10,148 @@ The main functionality of the application is for users to tap and earn points, m
 The project is organized into several key directories:
 
 ```plaintext
-├───public
-│       vite.svg
-│
-└───src
-    │   App.tsx
-    │   index.css
-    │   main.tsx
-    │   vite-env.d.ts
-    │
-    ├───assets
-    │   ├───icons
-    │   │   │   BoltVector.png
-    │   │   │   Boost.png
-    │   │   │   Canada.png
-    │   │   │   CaretRight.png
-    │   │   │   Deffense.png
-    │   │   │   down.png
-    │   │   │   flight.png
-    │   │   │   globe.png
-    │   │   │   Japan.png
-    │   │   │   Mexico.png
-    │   │   │   reward.png
-    │   │   │   Scotland.png
-    │   │   │   Spain.png
-    │   │   │   Swip.png
-    │   │   │   ThunderBolt.png
-    │   │   │   twitter.png
-    │   │   │   youtube.png
-    │   │   └───svgs
-    │   │           ArrowDown.tsx
-    │   │           Check.tsx
-    │   │           Close.tsx
-    │   │           Gun.tsx
-    │   │           HomeSvg.tsx
-    │   │           MissionSvg.tsx
-    │   │           PatternGroup.tsx
-    │   │           Progress.tsx
-    │   │           TroopSvg.tsx
-    │   └───images
-    │           Alien.webp
-    │           aliens-banner.webp
-    │           bg.webp
-    │           BiteAlien.webp
-    │           biteAlienOverlayBottom.webp
-    │           Coins.webp
-    │           confirmBg.webp
-    │           down.webp
-    │           EnergyBoost.webp
-    │           index.ts
-    │           millitary.webp
-    │           mission.webp
-    │           Octagon.webp
-    │           OctagonLevel.webp
-    │           plane.webp
-    │           proceedBg.webp
-    │           SelectCountryBackground.webp
-    │           skipBg.webp
-    │           Spear.webp
-    │           SpearWithBg.webp
-    │           spike.webp
-    │           ufo.webp
-    │           ufoback.webp
-    │           UfoVector.webp
-    ├───components
-    │   ├───game
-    │   │       GameHomeScreen.tsx
-    │   │       Reward.tsx
-    │   │       RewardRecieved.tsx
-    │   ├───onboading
-    │   │       LucidiaAlliance.tsx
-    │   │       LucidiaWelcome.tsx
-    │   │       SelectCountry.tsx
-    │   │       WelcomeScreen.tsx
-    │   └───shared
-    │           AlienCard.tsx
-    │           AppAlert.tsx
-    │           AppButton.tsx
-    │           BackgroundPattern.tsx
-    │           BiteAlien.tsx
-    │           ButtonWithBackground.tsx
-    │           CustomSelect.tsx
-    │           IconBox.tsx
-    │           IconButton.tsx
-    │           LevelUp.tsx
-    │           SkipTutorialCard.tsx
-    │           UfoOverlay.tsx
-    ├───routes
-    │       Router.tsx
-    ├───store
-    │   │   index.ts
-    │   └───slice
-    │           userSlice.ts
-    ├───utils
-    │   ├───helpers
-    │   │       helper.ts
-    │   ├───interfaces
-    │   │       interface.ts
-    │   └───styles
-    │           customStyle.css
-    └───views
-        ├───gameScreen
-        │   ├───Defense
-        │   │       DefenseScreen.tsx
-        │   ├───GameHomeScreen
-        │   │       GameHome.tsx
-        │   ├───Missions
-        │   │       MissionsScreen.tsx
-        │   └───Troops
-        │           TroopsScreen.tsx
-        └───onboarding
-                OnboardingScreen.tsx
-                TutorialScreen.tsx
++---public
+|       vite.svg
+|
++---src
+|   |   App.tsx
+|   |   index.css
+|   |   main.tsx
+|   |   vite-env.d.ts
+|   |
+|   +---assets
+|   |   +---icons
+|   |   |   |   BoltVector.png
+|   |   |   |   Boost.png
+|   |   |   |   Canada.png
+|   |   |   |   CaretRight.png
+|   |   |   |   Deffense.png
+|   |   |   |   down.png
+|   |   |   |   flight.png
+|   |   |   |   globe.png
+|   |   |   |   Japan.png
+|   |   |   |   Mexico.png
+|   |   |   |   reward.png
+|   |   |   |   Scotland.png
+|   |   |   |   Spain.png
+|   |   |   |   Swip.png
+|   |   |   |   ThunderBolt.png
+|   |   |   |   twitter.png
+|   |   |   |   youtube.png
+|   |   |   |
+|   |   |   \---svgs
+|   |   |           ArrowDown.tsx
+|   |   |           Check.tsx
+|   |   |           Close.tsx
+|   |   |           Elements.tsx
+|   |   |           Gun.tsx
+|   |   |           HomeSvg.tsx
+|   |   |           MissionSvg.tsx
+|   |   |           PatternGroup.tsx
+|   |   |           Progress.tsx
+|   |   |           TroopSvg.tsx
+|   |   |
+|   |   \---images
+|   |           Alien.webp
+|   |           aliens-banner.webp
+|   |           bg.webp
+|   |           BiteAlien.webp
+|   |           biteAlienOverlayBottom.webp
+|   |           Coins.webp
+|   |           confirmBg.webp
+|   |           down.webp
+|   |           EnergyBoost.webp
+|   |           index.ts
+|   |           millitary.webp
+|   |           mission.webp
+|   |           Octagon.webp
+|   |           OctagonLevel.png
+|   |           plane.webp
+|   |           proceedBg.webp
+|   |           SelectCountryBackground.webp
+|   |           skipBg.webp
+|   |           Spear.webp
+|   |           SpearWithBg.webp
+|   |           spike.webp
+|   |           ufo.webp
+|   |           ufoback.webp
+|   |           UfoVector.webp
+|   |
+|   +---components
+|   |   +---game
+|   |   |       GameHomeScreen.tsx
+|   |   |       Reward.tsx
+|   |   |       RewardRecieved.tsx
+|   |   |
+|   |   +---onboading
+|   |   |       LucidiaAlliance.tsx
+|   |   |       LucidiaWelcome.tsx
+|   |   |       SelectCountry.tsx
+|   |   |       WelcomeScreen.tsx
+|   |   |
+|   |   \---shared
+|   |           AlienCard.tsx
+|   |           AppAlert.tsx
+|   |           AppButton.tsx
+|   |           BackgroundPattern.tsx
+|   |           BiteAlien.tsx
+|   |           ButtonWithBackground.tsx
+|   |           CustomSelect.tsx
+|   |           IconBox.tsx
+|   |           IconButton.tsx
+|   |           LevelUp.tsx
+|   |           SkipTutorialCard.tsx
+|   |           UfoOverlay.tsx
+|   |
+|   +---routes
+|   |       Router.tsx
+|   |       
+|   +---store
+|   |   |   index.ts
+|   |   |
+|   |   \---slice
+|   |           userSlice.ts
+|   |
+|   +---utils
+|   |   +---helpers
+|   |   |       helper.ts
+|   |   |
+|   |   +---interfaces
+|   |   |       interface.ts
+|   |   |
+|   |   \---styles
+|   |           customStyle.css
+|   |
+|   \---views
+|       +---gameScreen
+|       |   +---Defense
+|       |   |       DefenseScreen.tsx
+|       |   |
+|       |   +---GameHomeScreen
+|       |   |       GameHome.tsx
+|       |   |
+|       |   +---Missions
+|       |   |       MissionsScreen.tsx
+|       |   |
+|       |   \---Troops
+|       |           TroopsScreen.tsx
+|       |
+|       \---onboarding
+|               OnboardingScreen.tsx
+|               TutorialScreen.tsx
+|
++---test
+|   \---components
+|       +---game
+|       |       GameHomeScreen.test.tsx
+|       |       Reward.test.tsx
+|       |       RewardReceived.test.tsx
+|       |
+|       \---onboarding
+|               LucidiaAlliance.test.tsx
+|
+\---__mocks__
+        fileMock.js
 ```
 ## `package.json` Overview
 - Project Name: telegrambot
@@ -164,11 +194,15 @@ To install and set up the project, follow these steps:
    ```
     npm run dev
    ```
-4. Build the project:
+4. Run test:
+   ```
+    npm test
+   ```
+5. Build the project:
    ```
     npm run build
    ```
-5. Preview the production build:
+6. Preview the production build:
    ```
     npm run preview
    ```
