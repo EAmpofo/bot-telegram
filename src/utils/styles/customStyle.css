@@ -1,0 +1,116 @@
+.welcomeScreen{
+    background-image: url("../../assets/images/bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.allianceScreen{
+    background-image: url("../../assets/images/ufo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.selectCountry{
+    background-image: url("../../assets/images/plane.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.select-container {
+    position: relative;
+    width: 290px;
+    margin: 20px;
+  }
+  
+  .selected-item {
+    background-image: url("../../assets/images/SelectCountryBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    height: 50px;
+  }
+  
+  .dropdown {
+    background-image: url("../../assets/images/SelectCountryBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    position: absolute;
+    width: 100%;
+    margin-top: 5px;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 5px;
+    max-height: 350px;
+    overflow-y: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .btnLevel{
+    background-image: url("../../assets/images/SelectCountryBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .dropdown-item {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #4c348e;
+  }
+  
+  .flag {
+    margin-right: 10px;
+  }
+  
+  .arrow {
+    margin-left: 10px;
+  }
+  .custom-shadow {
+    box-shadow: 0px 0px 30px 0px #7700FF;
+  }
+
+  .fade-enter {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  .fade-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .fade-exit-active {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 300ms, transform 300ms;
+  }
+  @keyframes float {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    100% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  }
