@@ -152,7 +152,7 @@ The project is organized into several key directories:
 To install and set up the project, follow these steps:
 1. Clone the repository:
    ```
-   git clone <repository-url>
+   git clone https://github.com/EAmpofo/bot-telegram.git
    cd telegrambot
    ```
 2. Install dependencies:
