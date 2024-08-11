@@ -15,7 +15,7 @@ const LevelUp: React.FC<levelUpProps> = ({
   onClose,
 }) => {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+    <div className={`${flexClass} fixed inset-0 z-50 bg-black bg-opacity-75`}>
       <div className={`${flexClass} ${className} relative overflow-hidden`}>
         <div className="absolute top-3 right-3" onClick={onClose}>
           {closeIcon}

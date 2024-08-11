@@ -1,5 +1,6 @@
 import React from 'react'
 import { confirmModalProps } from '../../utils/interfaces/interface'
+import { flexClass } from '../../utils/helpers/helper';
 
 const SkipTutorialCard:React.FC<confirmModalProps> = ({
     message,
@@ -11,7 +12,7 @@ const SkipTutorialCard:React.FC<confirmModalProps> = ({
 }) => {
     if (!isOpen) return null;
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+    <div className={`${flexClass} fixed inset-0 z-50  bg-black bg-opacity-75`}>
       <div className="p-6 text-white rounded-[40px] bg-primary-blue-black w-[85%] custom-shadow">
         <p className="mb-4  font-normal text-center text-[20px]">{message}</p>
         <p className='mb-3 text-xl font-normal text-center'>Skip tutorial?</p>

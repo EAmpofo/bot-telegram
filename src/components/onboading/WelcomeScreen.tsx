@@ -29,12 +29,12 @@ const WelcomeScreen = ({onStart}: {onStart: any}) => {
         />
       </div>
       <div className="absolute bottom-0 w-full">
-        <div className="flex relative bg-[#19191A] mx-auto item-center h-[45px] w-fit mb-1 justify-center px-2 rounded-lg">
+        <div className="flex relative bg-primary-shade-black mx-auto item-center h-[45px] w-fit mb-1 justify-center px-2 rounded-lg">
           <div className="flex items-center gap-2">
             <img src={Swip} alt="Swip" className="w-4 h-4" />
             <p className={`${normalStyle} z-10`}>Tap here to use this bot</p>
           </div>
-          <div className="absolute w-5 h-5 rotate-45 top-3/4 bg-[#19191A] z-[]"></div>
+          <div className="absolute w-5 h-5 rotate-45 top-3/4 bg-primary-shade-black z-[]"></div>
         </div>
         <div className=" bg-black h-[87px] flex items-center justify-center">
           <AppButton
