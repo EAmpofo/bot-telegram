@@ -1,12 +1,13 @@
-import { Alien, Pattern, ProceedBg, LevelUpBadge } from "../../assets/images";
+import { Alien, ProceedBg, LevelUpBadge } from "../../assets/images";
 import ButtonWithBackground from "../shared/ButtonWithBackground";
 import "../../utils/styles/customStyle.css";
 import BackgroundPattern from "../shared/BackgroundPattern";
 import { cover, flexClass } from "../../utils/helpers/helper";
-import SpearWithBg from "../../assets/icons/SpearWithBg.png";
+import SpearWithBg from "../../assets/images/SpearWithBg.png";
 
 
 import ArrowDown from "../../assets/icons/svgs/ArrowDown";
+import PatternGroup from "../../assets/icons/svgs/PatternGroup";
 
 const RewardReceived = ({ onClose }: { onClose: () => void }) => {
   return (
@@ -18,11 +19,11 @@ const RewardReceived = ({ onClose }: { onClose: () => void }) => {
         <p className="font-normal ml-7">Defense Level 1</p>
         <div className={`${flexClass}`}>
           <div className="z-10">
-            <img src={LevelUpBadge} alt="badge" />
+            <img src={LevelUpBadge} alt="badge" className="h-[90px]" />
           </div>
           <div className="ml-[-27px] relative">
-            <img src={SpearWithBg} alt="Spear" className="cover h-[39px]" />
-            <p className="absolute font-medium left-8 top-[20%]">999/999</p>
+            <img src={SpearWithBg} alt="Spear" className="cover h-[40px] overflow-hidden" />
+            <p className="absolute font-medium left-10 top-[20%]">999/999</p>
           </div>
         </div>
         <div className={`${flexClass} flex-col mt-6`}>
@@ -47,21 +48,22 @@ const RewardReceived = ({ onClose }: { onClose: () => void }) => {
                 onClick={() => onClose()}
                 text="Start defense"
               />
+              
               <BackgroundPattern
                 className="bottom-0 opacity-30"
-                image={Pattern}
+                image={<PatternGroup height="202"/>}
               />
               <BackgroundPattern
                 className="top-14 opacity-30"
-                image={Pattern}
+                image={<PatternGroup height="202"/>}
               />
               <BackgroundPattern
                 className="top-32 opacity-30"
-                image={Pattern}
+                image={<PatternGroup height="202"/>}
               />
               <BackgroundPattern
                 className="bottom-20 opacity-30"
-                image={Pattern}
+                image={<PatternGroup height="202"/>}
               />
             </div>
           </div>

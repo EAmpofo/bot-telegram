@@ -26,7 +26,7 @@ export interface buttonWithBgProps {
 
 export interface patternProps {
   className: string;
-  image: string;
+  image: JSX.Element;
 }
 
 export interface confirmModalProps {
