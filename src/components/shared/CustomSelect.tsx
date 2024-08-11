@@ -21,8 +21,8 @@ const CustomSelect: React.FC = () => {
   }, [selectedCountry]);
   return (
     <div className="select-container">
-      <div className="font-medium selected-item" onClick={toggleDropdown}>
-        {selectedCountry ? selectedCountry.name : "Select Country"}
+      <div className="text-xl font-medium selected-item" onClick={toggleDropdown}>
+        {selectedCountry ? selectedCountry.name : "Choose country"}
         {selectedCountry ? (
           <img className="flag" alt="canada" src={selectedCountry?.flag} />
         ) : (
@@ -30,7 +30,7 @@ const CustomSelect: React.FC = () => {
         )}
       </div>
       {isOpen && (
-        <ul className="font-medium dropdown">
+        <ul className="text-xl font-medium dropdown">
           {countriesFlag.map((country, index) => (
             <li
               key={index}

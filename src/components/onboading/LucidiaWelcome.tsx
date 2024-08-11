@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { setRewardValue, setTutorialFinished } from "../../store/slice/userSlice";
 import { useNavigate } from "react-router-dom";
 import { routerPaths } from "../../routes/Router";
+import { flexClass } from "../../utils/helpers/helper";
 
 
 const LucidiaWelcome = ({onProceed}: {onProceed: () => void}) => {
@@ -29,30 +30,30 @@ const LucidiaWelcome = ({onProceed}: {onProceed: () => void}) => {
   return (
     <div className="relative selectCountry h-[100vh]">
       <UfoOverlay />
-      <div className="!z-50 flex flex-col items-center justify-center w-3/4 mx-auto pt-40 relative ">
-        <p className="font-medium text-primary-green">Welcome to the</p>
-        <p className="font-bold text-[39px] text-primary-green">
+      <div className={`${flexClass} !z-50 flex-col w-3/4 mx-auto pt-40 relative `}>
+        <p className="text-xl font-medium text-primary-green">Welcome to the</p>
+        <p className="mt-5 text-4xl font-bold leading-10 text-primary-green">
           Lucidia Alliance
         </p>
-        <p className="mt-20 font-medium leading-[43px] text-[20px] w-[369px]">
+        <p className="mt-20 font-medium leading-10 text-[20px] w-[369px]">
           Welcome to Lucidia! Your gateway to earning tokens and exploring
           exciting in-game assets.
           Choose an option to get started:
         </p>
       </div>
-      <div className="absolute flex flex-col items-center justify-center w-full gap-5 bottom-10">
+      <div className={`${flexClass} absolute flex-col w-full gap-5 bottom-10`}>
         <ButtonWithBackground
           text="Proceed with Tutorial"
           description="(Earn 10,000 Tokens Bonus)"
           image={ProceedBg}
-          className="flex items-center font-medium cursor-pointer justify-center w-[369px] h-[56px] rounded-lg"
+          className={`${flexClass} font-medium cursor-pointer w-[85%] py-1 rounded-lg`}
           onClick={() => onProceed()}
         />
         <ButtonWithBackground
           text="Skip"
           description="(No Bonus)"
           image={SkipBg}
-          className="flex items-center font-medium justify-center w-[369px] h-[56px] rounded-lg"
+          className={`${flexClass} font-medium cursor-pointer w-[85%] py-1 rounded-lg`}
           onClick={() => handleOpenModal()}
         />
       </div>
