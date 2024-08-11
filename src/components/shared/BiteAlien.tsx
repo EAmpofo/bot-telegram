@@ -87,11 +87,11 @@ const BiteAlien = ({
           </div>
           <div
             className={`absolute flex items-center justify-between w-full px-10 ${
-              type !== "onboarding" ? "mt-36" : "mt-10"
-            } ${type === "spike" ? "flex-col-reverse gap-3 mt-48" : ""}`}
+              type !== "onboarding" ? "mt-[39%]" : "mt-10"
+            } ${type === "spike" ? "flex-col-reverse gap-3 mt-52" : ""}`}
           >
             <AppButton
-              className={`px-5 py-2 font-medium rounded-lg  bg-primary-shade-blue ${
+              className={`px-5 py-2 font-medium rounded-lg text-xl  bg-primary-shade-blue ${
                 type === "spike" ? "w-full text-center" : "w-max"
               }`}
               onClick={() => handleSkipOrPlay()}

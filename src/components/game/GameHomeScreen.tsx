@@ -100,7 +100,7 @@ const GameHomeScreen = () => {
             className={`${cover} w-[33px]`}
           />
         </div>
-        <div className="w-[352px] mt-3">
+        <div className="mt-3 w-[85%]">
           <p className="font-normal">
             Your current level is displayed here, collect coins and increase
             your level
@@ -153,11 +153,11 @@ const GameHomeScreen = () => {
           className="relative cursor-pointer mt-9"
           onClick={handleAlienClick}
         >
-          <img src={UfoVector} alt="ufo" className="" />
+          <img src={UfoVector} alt="ufo" className="w-full h-full" />
           <img
             src={Alien}
             alt="alien"
-            className="absolute -top-8 left-28 w-[180px]"
+            className="absolute -top-8 left-28 w-[43%]"
           />
         </div>
       </div>
@@ -245,8 +245,8 @@ const GameHomeScreen = () => {
           {showLevelUp && (
             <LevelUp
               closeIcon={<Close height="36" width="36" />}
-              className="w-[384px] h-[391px] rounded-3xl custom-shadow bg-gradient-to-b from-[#010D1C] to-[#220039]"
-              imageIcon={<img src={LevelUpBadge} className="w-[122px]" />}
+              className="w-[90%] h-[50%] rounded-3xl custom-shadow bg-gradient-to-b from-[#010D1C] to-[#220039]"
+              imageIcon={<img src={LevelUpBadge} className="w-[40%]" />}
               title="Level up!"
               multitap="Multitap"
               multitapValue={`+1`}
