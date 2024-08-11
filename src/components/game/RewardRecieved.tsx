@@ -3,7 +3,7 @@ import ButtonWithBackground from "../shared/ButtonWithBackground";
 import "../../utils/styles/customStyle.css";
 import BackgroundPattern from "../shared/BackgroundPattern";
 import { cover, flexClass } from "../../utils/helpers/helper";
-import SpearWithBg from "../../assets/icons/SpearWithBg.png";
+import SpearWithBg from "../../assets/images/SpearWithBg.png";
 
 
 import ArrowDown from "../../assets/icons/svgs/ArrowDown";
