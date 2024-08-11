@@ -119,11 +119,11 @@ const GameHomeScreen = () => {
                 <img
                   src={Octagon}
                   alt="Shape"
-                  className={`${cover} h-[90px]`}
+                  className={`${cover} h-[85px]`}
                 />
               )}
             </div>
-            <div className="ml-[-30px] relative">
+            <div className="ml-[-36px] relative">
               <div
                 className="relative"
                 style={{
@@ -135,8 +135,8 @@ const GameHomeScreen = () => {
                   background: "linear-gradient(0deg, #7700FF 0%, #7700FF 100%)",
                 }}
               >
-                <Progress height="45" width="360" className="" />
-                <p className="absolute font-medium left-8 top-[20%]">
+                <Progress height="44" width="360" className="" />
+                <p className="absolute font-medium left-12 top-[20%]">
                   {points}/{reward ? 1999 : points}
                 </p>
                 <p className="absolute mt-2 text-sm font-normal w-28 left-8">

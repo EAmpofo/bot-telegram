@@ -1,4 +1,5 @@
-import { Pattern } from "../../assets/images";
+import PatternGroup from "../../assets/icons/svgs/PatternGroup";
+
 import { flexBtwn, flexClass } from "../../utils/helpers/helper";
 import { levelUpProps } from "../../utils/interfaces/interface";
 import BackgroundPattern from "./BackgroundPattern";
@@ -40,13 +41,13 @@ const LevelUp: React.FC<levelUpProps> = ({
             Close
           </button>
         </div>
-        <BackgroundPattern className="top-0 opacity-30" image={Pattern} />
-        <BackgroundPattern className="-top-20 opacity-30" image={Pattern} />
-        <BackgroundPattern className="-top-40 opacity-30" image={Pattern} />
-        <BackgroundPattern className="-bottom-12 opacity-30" image={Pattern} />
-        <BackgroundPattern className="top-40 opacity-30" image={Pattern} />
-        <BackgroundPattern className="bottom-28 opacity-30" image={Pattern} />
-        <BackgroundPattern className="-bottom-32 opacity-30" image={Pattern} />
+        <BackgroundPattern className="top-0 opacity-30" image={<PatternGroup height="202"/>} />
+        <BackgroundPattern className="-top-20 opacity-30" image={<PatternGroup height="202"/>} />
+        <BackgroundPattern className="-top-40 opacity-30" image={<PatternGroup height="202"/>} />
+        <BackgroundPattern className="-bottom-12 opacity-30" image={<PatternGroup height="202"/>} />
+        <BackgroundPattern className="top-40 opacity-30" image={<PatternGroup height="202"/>} />
+        <BackgroundPattern className="bottom-28 opacity-30" image={<PatternGroup height="202"/>} />
+        <BackgroundPattern className="-bottom-32 opacity-30" image={<PatternGroup height="202"/>} />
       </div>
     </div>
   );
