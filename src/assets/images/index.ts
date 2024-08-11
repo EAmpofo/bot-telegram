@@ -19,6 +19,7 @@ import ArrowDown from "./down.png"
 import Coins from "./Coins.png"
 import Pattern from "./pattern.png"
 import UfoVector from "./ufoVector.png"
+import LevelUpBadge from "./OctagonLevel.png"
 export {
     aliensBanner,
     Alien,
@@ -40,5 +41,6 @@ export {
     ArrowDown,
     Coins,
     Pattern,
-    UfoVector
+    UfoVector,
+    LevelUpBadge
 }

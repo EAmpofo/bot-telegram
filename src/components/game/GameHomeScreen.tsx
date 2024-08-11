@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { cover, flexBtwn, flexClass } from "../../utils/helpers/helper";
-import { Alien, Octagon } from "../../assets/images";
+import { Alien, LevelUpBadge, Octagon } from "../../assets/images";
 
 import { UfoVector } from "../../assets/images";
 
@@ -17,7 +17,7 @@ import { useSelector } from "react-redux";
 
 import { useEffect, useState } from "react";
 import AppAlert from "../shared/AppAlert";
-import Badge from "../../assets/icons/svgs/Badge";
+
 import LevelUp from "../shared/LevelUp";
 import Close from "../../assets/icons/svgs/Close";
 import Progress from "../../assets/icons/svgs/Progress";
@@ -113,7 +113,8 @@ const GameHomeScreen = () => {
           <div className={`flex items-center w-full`}>
             <div className="z-10">
               {tutorialFinished ? (
-                <Badge className="" height="96" width="85" />
+              
+                <img src={LevelUpBadge} alt="badge-level" className="w-[83px]"  />
               ) : (
                 <img
                   src={Octagon}
@@ -245,7 +246,7 @@ const GameHomeScreen = () => {
             <LevelUp
               closeIcon={<Close height="36" width="36" />}
               className="w-[384px] h-[391px] rounded-3xl custom-shadow bg-gradient-to-b from-[#010D1C] to-[#220039]"
-              imageIcon={<Badge height="" width="122" />}
+              imageIcon={<img src={LevelUpBadge} className="w-[122px]" />}
               title="Level up!"
               multitap="Multitap"
               multitapValue={`+1`}

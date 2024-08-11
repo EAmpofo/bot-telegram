@@ -1,10 +1,11 @@
-import { Alien, Pattern, ProceedBg } from "../../assets/images";
+import { Alien, Pattern, ProceedBg, LevelUpBadge } from "../../assets/images";
 import ButtonWithBackground from "../shared/ButtonWithBackground";
 import "../../utils/styles/customStyle.css";
 import BackgroundPattern from "../shared/BackgroundPattern";
 import { cover, flexClass } from "../../utils/helpers/helper";
 import SpearWithBg from "../../assets/icons/SpearWithBg.png";
-import Badge from "../../assets/icons/svgs/Badge";
+
+
 import ArrowDown from "../../assets/icons/svgs/ArrowDown";
 
 const RewardReceived = ({ onClose }: { onClose: () => void }) => {
@@ -17,10 +18,10 @@ const RewardReceived = ({ onClose }: { onClose: () => void }) => {
         <p className="font-normal ml-7">Defense Level 1</p>
         <div className={`${flexClass}`}>
           <div className="z-10">
-            <Badge className="" height="96" width="85" />
+            <img src={LevelUpBadge} alt="badge" />
           </div>
           <div className="ml-[-27px] relative">
-            <img src={SpearWithBg} alt="Spear" className="cover h-[40px]" />
+            <img src={SpearWithBg} alt="Spear" className="cover h-[39px]" />
             <p className="absolute font-medium left-8 top-[20%]">999/999</p>
           </div>
         </div>
