@@ -3,11 +3,8 @@ import ButtonWithBackground from "../shared/ButtonWithBackground";
 import "../../utils/styles/customStyle.css";
 import BackgroundPattern from "../shared/BackgroundPattern";
 import { cover, flexClass } from "../../utils/helpers/helper";
-
-
-
 import ArrowDown from "../../assets/icons/svgs/ArrowDown";
-import PatternGroup from "../../assets/icons/svgs/PatternGroup";
+import Elements from "../../assets/icons/svgs/Elements";
 
 const RewardReceived = ({ onClose }: { onClose: () => void }) => {
   return (
@@ -50,20 +47,8 @@ const RewardReceived = ({ onClose }: { onClose: () => void }) => {
               />
               
               <BackgroundPattern
-                className="bottom-0 opacity-30"
-                image={<PatternGroup height="202"/>}
-              />
-              <BackgroundPattern
-                className="top-14 opacity-30"
-                image={<PatternGroup height="202"/>}
-              />
-              <BackgroundPattern
-                className="top-32 opacity-30"
-                image={<PatternGroup height="202"/>}
-              />
-              <BackgroundPattern
-                className="bottom-20 opacity-30"
-                image={<PatternGroup height="202"/>}
+                className="opacity-30"
+                image={<Elements height="685" width="431"/>}
               />
             </div>
           </div>
